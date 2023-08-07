@@ -1,0 +1,14 @@
+<h1>Album Tracks</h1>
+  <ul>
+    {{#each tracks}}
+      <li>
+        {{name}}
+        {{#if preview_url}}
+          <audio controls>
+            <source src="{{preview_url}}" type="audio/mpeg">
+          </audio>
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+
