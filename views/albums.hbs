@@ -1,9 +1,16 @@
-<h1>Artist Albums</h1>
-  <ul>
+
+<div id="displayContainer">
     {{#each albums}}
-      <div>
-        <a href="/tracks/{{id}}">{{name}}</a>
+      <div id="displayInnerContainer">
+        <div id="imgContainer">
+          {{#with images.[0]}}
+          <img src="{{url}}" alt="">
+          {{/with}}
+        </div>  
+        <div id="greyContainer">
+          <h3>{{name}}</h3>
+          <a href="/tracks/{{id}}">View Tracks</a>
+        </div>
       </div>
     {{/each}}
-  </ul>
-
+</div>

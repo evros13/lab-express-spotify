@@ -1,13 +1,15 @@
 
-<div id="artistContainer">
+<div id="displayContainer">
     {{#each artists}}
-      <div id="artistsInnerContainer">
-        <div id="greyContainer">
-          <h3>{{name}}</h3>
-          <a href="/albums/{{id}}">View Albums</a>
+      <div id="displayInnerContainer">
+        <div id="imgContainer">
           {{#with images.[0]}}
           <img src="{{url}}" alt="">
           {{/with}}
+        </div>  
+        <div id="greyContainer">
+          <h3>{{name}}</h3>
+          <a href="/albums/{{id}}">View Albums</a>
         </div>
       </div>
     {{/each}}

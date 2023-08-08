@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 #homeBackground {
@@ -12,19 +13,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    
-}
-
-a {
-    text-decoration: none;
-    background-color: orangered;
-    color: white;
-    font-weight: bold;
-    border: none;
-    padding: 10px;
-    border-radius: 2px;
 
 }
+
 
 #homeContainer {
     display: flex;
@@ -59,31 +50,64 @@ a {
     flex-direction: column;
 }
 
-#artistContainer {
-    display: flex;
-    display: inline-block;
-    flex-direction: row;
 
+#displayContainer {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
 }
 
-#artistsInnerContainer {
-    padding: 30px;
+#displayInnerContainer {
     display: flex;
     flex-direction: column;
-    width: 33vw;
+    padding: 10px;
+    text-align: center;
+}
+
+#imgContainer {
+    display: flex;
     align-items: center;
     justify-content: center;
-    
+    flex-grow: 1;
+}
+
+#imgContainer img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #greyContainer {
     background-color: rgba(44, 41, 41, 0.756);
     color: white;
-    width: 320px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#greyContainer h3 {
+    margin: 1px 0 2px 0;
+}
+
+#greyContainer a {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    /* display: block; */
+    padding-bottom: 5px;
+    border-radius: 5px;
+    width: 100px;
+    left: 50px;
+}
+
+h1 {
+    color: black;
+    margin: 20px;
+}
+
+#tableContainer {
+    margin: 20px; 
 }
